@@ -4,10 +4,46 @@
         <title>Isiah Obera</title>
         <link rel="stylesheet" href="assets/css/uikit.min.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jquery-3.2.0.min.js"></script>
         <script src="assets/js/uikit.min.js"></script>
         <script src="assets/js/uikit-icons.min.js"></script>
     </head>
     <body>
+      <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+
+              <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="#">Active</a></li>
+                  <li>
+                      <a href="#">Parent</a>
+                      <div class="uk-navbar-dropdown">
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li class="uk-active"><a href="#">Active</a></li>
+                              <li><a href="#">Item</a></li>
+                              <li><a href="#">Item</a></li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li><a href="#">Item</a></li>
+              </ul>
+
+          </div>
+
+          <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">Push</button>
+
+          <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+              <div class="uk-offcanvas-bar">
+
+                  <h3>Title</h3>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                  <button class="uk-button uk-button-default uk-offcanvas-close uk-width-1-1 uk-margin" type="button">Close</button>
+
+              </div>
+          </div>
+      </nav>
+
+
     </body>
 </html>
